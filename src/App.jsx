@@ -96,7 +96,7 @@ export function App() {
 
       
       <footer className="bg-slate-950/90 border-t border-slate-800 py-4 text-center text-xs font-bold text-gray-400">
-        Examen Parcial 1
+        Examen Parcial 1 Roque Angel FR
       </footer>
     </div>
   );
