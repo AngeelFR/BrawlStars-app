@@ -1,4 +1,3 @@
-// src/components/BrawlerCard.jsx
 import React from 'react';
 
 const RARITY_MAP = {
@@ -61,7 +60,7 @@ export const BrawlerCard = ({ brawler }) => {
           />
         </div>
 
-        {/* Detalles */}
+        
         <div className="p-5">
           <div className="flex items-center justify-between mb-2">
             <span className={`text-[11px] font-black px-3 py-1 rounded-full border shadow-sm ${badgeStyle}`}>
@@ -87,7 +86,7 @@ export const BrawlerCard = ({ brawler }) => {
             </p>
           )}
 
-          {/* Estadísticas estilo Brawl Stars */}
+          {/* Estadísticas estilo Brawler */}
           <div className="bg-slate-950/90 rounded-xl p-3 border border-slate-800 space-y-2">
             <div className="flex items-center justify-between text-xs font-bold border-b border-slate-800/80 pb-1.5">
               <span className="text-slate-400">NIVEL DE FUERZA:</span>

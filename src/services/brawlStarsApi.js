@@ -1,9 +1,8 @@
-/// src/services/brawlStarsApi.js
 import axios from 'axios';
 
 const BASE_URL = 'https://api.brawlapi.com/v1';
 
-// Mapeo completo de clases al español
+
 const CLASS_TRANSLATIONS = {
   'Damage Dealer': 'Destructor',
   'Tank': 'Tanque',
@@ -15,7 +14,7 @@ const CLASS_TRANSLATIONS = {
   'Hybrid': 'Híbrido'
 };
 
-// Traducciones guardadas para evitar depender de APIs externas limitadas
+
 const LOCAL_DESCRIPTIONS = {
   'Vince': 'Vince atiende la cafetera espresso y a sus amigos de muchas patas. Camina despacio por su Creepy Café cuidando no pisar a ninguno.',
   'Cosmo': 'Cosmo es el astrónomo principal del Observatorio de Starr Park. Además de enseñar el universo a los visitantes, pasa el tiempo observando las estrellas.',
@@ -31,7 +30,7 @@ export const fetchBrawlers = async () => {
       const rawClass = brawler.class?.name || brawler.class || 'Brawler';
       const translatedClass = CLASS_TRANSLATIONS[rawClass] || rawClass;
       
-      // Busca la traducción en el diccionario o usa la descripción original limpia
+      
       const translatedDescription = LOCAL_DESCRIPTIONS[brawler.name] || brawler.description || '';
 
       return {

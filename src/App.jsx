@@ -27,7 +27,7 @@ export function App() {
     loadData();
   }, []);
 
-  // Filtrado optimizado para evitar re-renderizados innecesarios
+  
   const filteredBrawlers = useMemo(() => {
     if (!Array.isArray(brawlers)) return [];
     return brawlers.filter((b) =>
@@ -59,7 +59,7 @@ export function App() {
         </div>
       </header>
 
-      {/* Main Content */}
+      
       <main className="flex-grow max-w-6xl w-full mx-auto p-4 md:p-6">
         {/* Buscador */}
         <div className="relative mb-8 max-w-md mx-auto">
@@ -94,7 +94,7 @@ export function App() {
         )}
       </main>
 
-      {/* Footer */}
+      
       <footer className="bg-slate-950/90 border-t border-slate-800 py-4 text-center text-xs font-bold text-gray-400">
         Examen Parcial 1
       </footer>
